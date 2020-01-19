@@ -69,7 +69,7 @@ module.exports = {
             symbolId: 'icon-[name]'
           }
         },
-        include: resolve('../src/components/svgIcon/icons')
+        include: resolve('src/components')
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
@@ -79,7 +79,7 @@ module.exports = {
           publicPath:'../../',
           name: utils.assetsPath('img/[name].[hash:7].[ext]')
         },
-        exclude: resolve('../src/components/svgIcon/icons')
+        exclude: resolve('src/components')
       },
       {
         test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
